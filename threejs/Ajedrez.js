@@ -30,8 +30,8 @@ function init()
 
 function loadAjedrez()
 {
-  var loader = new THREE.FBXLoader();
-  loader.load('models/chess/ChessBoard.FBX', function(object) {
+  var loader = new THREE.ObjectLoader();
+  loader.load('models/chess/chess.json', function(object) {
     object.position.y = 0;
     scene.add(object);
   }, function(err)
