@@ -32,6 +32,7 @@ function loadAjedrez()
 {
   var loader = new THREE.FBXLoader();
   loader.load('models/chess/ChessBoard.FBX', function(object) {
+    
     object.position.y = 0;
     scene.add(object);
   });
