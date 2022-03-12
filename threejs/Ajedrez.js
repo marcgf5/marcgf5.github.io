@@ -32,7 +32,8 @@ function init()
 
 function loadAjedrez()
 {
-  loader.load('models/soldado/soldado.json', function(object) {
+  loader.load("models/soldado/soldado.json", function(object) {
+    object.position.y = 0;
     scene.add(object);
   });
   scene.add(new THREE.AxesHelper(3) );
