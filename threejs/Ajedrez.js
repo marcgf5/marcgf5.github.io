@@ -35,7 +35,7 @@ function loadAjedrez()
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chess.json', function(object) {
     object.position.y = 0;
-    object.scale.set(0.1,0.1,0.1);
+    object.scale.set(0.001,0.001,0.001);
     scene.add(object);
   }, function(err)
   {
