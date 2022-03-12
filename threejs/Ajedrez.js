@@ -26,6 +26,7 @@ function init()
   cameraControls.target.set( 0, 0, 0 );
 
   window.addEventListener('resize', updateAspectRatio );
+  
 }
 
 
@@ -34,6 +35,7 @@ function loadAjedrez()
   loader.load('models/chess/ChessBoard.FBX', function(object) {
     scene.add(object);
   });
+  scene.add(new THREE.AxesHelper(3) );
 }
 
 function updateAspectRatio()
