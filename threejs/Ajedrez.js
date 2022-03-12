@@ -9,8 +9,7 @@ render();
 
 function init()
 {
-  var ambiental = new THREE.AmbientLight(0x222222);
-    scene.add(ambiental);
+  var ambiental = new THREE.AmbientLight(0xFFFFFF);
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
@@ -24,6 +23,8 @@ function init()
 
   cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
   cameraControls.target.set( 0, 0, 0 );
+
+  scene.add(ambiental);
 
   window.addEventListener('resize', updateAspectRatio );
   
