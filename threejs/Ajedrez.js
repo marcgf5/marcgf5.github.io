@@ -49,7 +49,6 @@ function update()
   cameraControls.update();
 
   // Movimiento propio del cubo
-	cubo.rotateOnAxis( new THREE.Vector3(0,1,0), angulo );
 }
 
 function render()
