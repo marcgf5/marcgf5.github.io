@@ -9,6 +9,8 @@ render();
 
 function init()
 {
+  var ambiental = new THREE.AmbientLight(0x222222);
+    scene.add(ambiental);
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
@@ -33,7 +35,7 @@ function loadAjedrez()
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chess.json', function(object) {
     object.position.y = 0;
-    object.scale.set(0.01,0.01,0.01);
+    object.scale.set(0.1,0.1,0.1);
     scene.add(object);
   }, function(err)
   {
