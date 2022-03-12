@@ -24,6 +24,7 @@ function init()
   cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
   cameraControls.target.set( 0, 0, 0 );
 
+  direccional.position.set(5,10,7.5);
   scene.add(direccional);
 
   window.addEventListener('resize', updateAspectRatio );
