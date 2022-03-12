@@ -2,7 +2,6 @@
 var renderer, scene, camera, ajedrez;
 var cameraControls;
 var angulo = -0.01;
-var loader;
 
 init();
 loadAjedrez();
@@ -10,7 +9,6 @@ render();
 
 function init()
 {
-  loader = new THREE.ObjectLoader();
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
@@ -32,7 +30,8 @@ function init()
 
 function loadAjedrez()
 {
-  loader.load("models/soldado/soldado.json", function(object) {
+  var loader = new THREE.ObjectLoader();
+  loader.load('models/soldado/soldado.json', function(object) {
     object.position.y = 0;
     scene.add(object);
   });
