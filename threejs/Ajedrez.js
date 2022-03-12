@@ -34,7 +34,11 @@ function loadAjedrez()
   loader.load('models/chess/ChessBoard.FBX', function(object) {
     object.position.y = 0;
     scene.add(object);
+  }, function(err)
+  {
+    console.log(err.message);
   });
+
   scene.add(new THREE.AxesHelper(3) );
 }
 
