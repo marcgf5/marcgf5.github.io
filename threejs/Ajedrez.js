@@ -31,9 +31,9 @@ function init()
 
 function loadAjedrez()
 {
-  loader.load('models/chess/ChessBoard.FBX'),function(object) {
+  loader.load('models/chess/ChessBoard.FBX', function(object) {
     scene.add(object);
-  }
+  });
 }
 
 function updateAspectRatio()
