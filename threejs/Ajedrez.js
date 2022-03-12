@@ -10,7 +10,7 @@ render();
 
 function init()
 {
-  loader = new THREE.FBXLoader();
+  loader = new THREE.ObjectLoader();
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
@@ -32,7 +32,7 @@ function init()
 
 function loadAjedrez()
 {
-  loader.load('models/chess/ChessBoard.FBX', function(object) {
+  loader.load('models/soldado/soldado.json', function(object) {
     scene.add(object);
   });
   scene.add(new THREE.AxesHelper(3) );
