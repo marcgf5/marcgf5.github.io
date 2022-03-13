@@ -35,6 +35,25 @@ function init()
 
 function loadAjedrez()
 {
+  var skybox;
+  var entorno = [ "images/posx.jpg" , "images/negx.jpg",
+                    "images/posy.jpg" , "images/negy.jpg",
+                    "images/posz.jpg" , "images/negz.jpg"];
+    var texEsfera = new THREE.CubeTextureLoader().load( entorno );
+    var shader = THREE.ShaderLib.cube;
+    shader.uniforms.tCube.value = texEsfera;
+
+    var matSkybox = new THREE.ShaderMaterial( {
+                        vertexShader: shader.vertexShader,
+                        fragmentShader: shader.fragmentShader,
+                        uniforms: shader.uniforms,
+                        depthWrite: false,
+                        side: THREE.BackSide
+    } );
+
+    var habitacion = new THREE.Mesh( new THREE.CubeGeometry(30,30,30), matSkybox );
+    skybox.name = 'skybox';
+    scene.add(skybox);
 
   var textureLoader = new THREE.TextureLoader();
 
@@ -50,9 +69,9 @@ function loadAjedrez()
     tablero.scale.set(1,1,1);
 
     loader.load('models/chess/whiteking.json', function(whiteking) {
-      var whitekingadd = new THREE.Mesh( whiteking, whiteMaterial );
+      //var whitekingadd = new THREE.Mesh( whiteking, whiteMaterial );
       whiteking.position.set(7,-1,1);
-      tablero.add(whitekingadd);
+      tablero.add(whiteking);
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
       whitequeen.position.set(7,1,1);
