@@ -17,6 +17,7 @@ function init()
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
   renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   document.getElementById('container').appendChild( renderer.domElement );
 
   scene = new THREE.Scene();
@@ -77,18 +78,33 @@ function loadAjedrez()
   loader.load('models/chess/chessboard.json', function(tablero) {
     tablero.position.y = 0;
     tablero.scale.set(1,1,1);
-    tablero.receiveShadow = true;
+    tablero.traverse(function(node) {
+      if (node.isMesh) {
+        node.receiveShadow = true;
+        node.castShadow = true;
+      }
+    });
 
     loader.load('models/chess/whiteking.json', function(whiteking) {
       //var whitekingadd = new THREE.Mesh( whiteking, whiteMaterial );
       whiteking.position.set(7,-1,1);
       tablero.add(whiteking);
-      whiteking.castShadow = true;
+      whiteking.traverse(function(node) {
+        if (node.isMesh) {
+          node.receiveShadow = true;
+          node.castShadow = true;
+        }
+      });
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
       whitequeen.position.set(7,1,1);
       tablero.add(whitequeen);
-      whitequeen.castShadow = true;
+      whitequeen.traverse(function(node) {
+        if (node.isMesh) {
+          node.receiveShadow = true;
+          node.castShadow = true;
+        }
+      });
     });
     loader.load('models/chess/whitebishop.json', function(whitebishop) {
       whitebishop.position.set(7,3,1);
