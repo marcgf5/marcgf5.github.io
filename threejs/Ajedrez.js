@@ -51,7 +51,7 @@ function loadAjedrez()
                         side: THREE.BackSide
     } );
 
-    var habitacion = new THREE.Mesh( new THREE.CubeGeometry(30,30,30), matSkybox );
+    var habitacion = new THREE.Mesh( new THREE.CubeGeometry(300,300,300), matSkybox );
     skybox.name = 'skybox';
     scene.add(skybox);
 
