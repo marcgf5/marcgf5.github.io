@@ -40,9 +40,8 @@ function loadAjedrez()
     tablero.scale.set(1,1,1);
     scene.add(tablero);
 
-    loader.load('models/chess/whitekingtrue.json', function(whiteking) {
-      //whiteking.position.set(6.75,-0.7,1);
-      whiteking.scale.set(100,100,100)
+    loader.load('models/chess/whiteking.json', function(whiteking) {
+      whiteking.position.set(6.75,-0.7,1);
       tablero.add(whiteking);
     });
   }, function(err)
