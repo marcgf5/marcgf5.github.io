@@ -10,6 +10,8 @@ render();
 function init()
 {
   var directional = new THREE.DirectionalLight(0xffffff, 1);
+  var directional2 = new THREE.DirectionalLight(0xffffff, 1);
+  var ambiental = new THREE.AmbientLight(0xffffff);
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
@@ -24,10 +26,13 @@ function init()
   cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
   cameraControls.target.set( 0, 0, 0 );
 
-  directional.lookAt(0,0,0);
   directional.position.set(10,10,0);
+  directional2.position.set(-10,10,0);
+  
 
   scene.add(directional);
+  scene.add(directional2);
+  scene.add(ambiental);
 
   window.addEventListener('resize', updateAspectRatio );
   
