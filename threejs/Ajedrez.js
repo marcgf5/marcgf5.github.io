@@ -31,8 +31,8 @@ function init()
   
 
   scene.add(directional);
-  //scene.add(directional2);
-  scene.add(ambiental);
+  scene.add(directional2);
+  //scene.add(ambiental);
 
   window.addEventListener('resize', updateAspectRatio );
   
