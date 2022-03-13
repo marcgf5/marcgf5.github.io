@@ -35,14 +35,21 @@ function init()
 function loadAjedrez()
 {
   var loader = new THREE.ObjectLoader();
-  loader.load('models/chess/chess.json', function(object) {
-    object.position.y = 0;
-    object.scale.set(0.001,0.001,0.001);
-    scene.add(object);
+  loader.load('models/chess/chess.json', function(tablero) {
+    tablero.position.y = 0;
+    tablero.scale.set(0.001,0.001,0.001);
+    scene.add(tablero);
   }, function(err)
   {
     console.log(err.message);
   });
+  loader.load('models/chess/whiteking.json', function(whiteking) {
+    whiteking.position.y = 0;
+    whiteking.scale.set(0.001,0.001,0.001);
+    scene.add(whiteking);
+  });
+
+
 
   scene.add(new THREE.AxesHelper(3) );
 }
