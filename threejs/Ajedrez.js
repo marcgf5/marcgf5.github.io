@@ -11,7 +11,7 @@ function init()
 {
   var directional = new THREE.DirectionalLight(0xffffff, 1);
   var directional2 = new THREE.DirectionalLight(0xffffff, 1);
-  var ambiental = new THREE.AmbientLight(0xffffff);
+  var ambiental = new THREE.AmbientLight(0xFFFBBF);
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
@@ -31,7 +31,7 @@ function init()
   
 
   scene.add(directional);
-  //scene.add(directional2);
+  scene.add(directional2);
   scene.add(ambiental);
 
   window.addEventListener('resize', updateAspectRatio );
@@ -92,12 +92,12 @@ function loadAjedrez()
     });
     loader.load('models/chess/whiteknight.json', function(whiteknight) {
       whiteknight.position.set(7,-5,1);
-      whiteknight.rotation.set(0,3,0);
+      whiteknight.rotation.set(0,0,3);
       tablero.add(whiteknight);
     });
     loader.load('models/chess/whiteknight.json', function(whiteknight) {
       whiteknight.position.set(7,5,1);
-      whiteknight.rotation.set(0,3,0);
+      whiteknight.rotation.set(0,0,3);
       tablero.add(whiteknight);
     });
     loader.load('models/chess/whiterook.json', function(whiterook) {
