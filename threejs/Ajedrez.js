@@ -38,7 +38,7 @@ function loadAjedrez()
 
   var textureLoader = new THREE.TextureLoader();
 
-  var whiteMap = textureLoader.load('images/chess.png');
+  var whiteMap = textureLoader.load('images/whitemarble.jpg');
   var blackMap = textureLoader.load('images/blackmarble.jpeg');
 
   /*var whiteMaterial = new THREE.MeshLambertMaterial({color: 'white', wireframe: false, map: whiteMap});
@@ -51,7 +51,7 @@ function loadAjedrez()
 
     loader.load('models/chess/whiteking.json', function(whiteking) {
       tablero.add(whiteking);
-      whiteking.material.setValues({map: whiteMap});
+      whiteking.material.setValues({map: blackMap});
       whiteking.position.set(7,-1,1);
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
