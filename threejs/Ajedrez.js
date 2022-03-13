@@ -9,7 +9,7 @@ render();
 
 function init()
 {
-  var hemisphereLight = new THREE.HemisphereLight(0xffffbb, 0x080820,1);
+  var hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x080820,1);
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
