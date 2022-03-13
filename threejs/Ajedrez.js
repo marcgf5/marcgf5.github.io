@@ -48,12 +48,11 @@ function loadAjedrez()
   loader.load('models/chess/chessboard.json', function(tablero) {
     tablero.position.y = 0;
     tablero.scale.set(1,1,1);
-    scene.add(tablero);
 
     loader.load('models/chess/whiteking.json', function(whiteking) {
+      tablero.add(whiteking);
       whiteking.material.setValues({map: whiteMap});
       whiteking.position.set(7,-1,1);
-      tablero.add(whiteking);
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
       whitequeen.position.set(7,1,1);
@@ -179,6 +178,7 @@ function loadAjedrez()
       blackpawn.position.set(-5,-7,1);
       tablero.add(blackpawn);
     });
+    scene.add(tablero);
   }, function(err)
   {
     console.log(err.message);
