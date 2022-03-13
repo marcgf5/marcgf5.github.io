@@ -104,6 +104,70 @@ function loadAjedrez()
       whitepawn.position.set(5,-7,1);
       tablero.add(whitepawn);
     });
+    loader.load('models/chess/blackking.json', function(blackking) {
+      blackking.position.set(-7,-1,1);
+      tablero.add(blackking);
+    });
+    loader.load('models/chess/blackqueen.json', function(blackqueen) {
+      blackqueen.position.set(-7,1,1);
+      tablero.add(whitequeen);
+    });
+    loader.load('models/chess/blackbishop.json', function(blackbishop) {
+      blackbishop.position.set(-7,3,1);
+      tablero.add(blackbishop);
+    });
+    loader.load('models/chess/blackbishop.json', function(blackbishop) {
+      blackbishop.position.set(-7,-3,1);
+      tablero.add(blackbishop);
+    });
+    loader.load('models/chess/blackknight.json', function(blackknight) {
+      blackknight.position.set(-7,-5,1);
+      tablero.add(blackknight);
+    });
+    loader.load('models/chess/blackknight.json', function(blackknight) {
+      blackknight.position.set(-7,5,1);
+      tablero.add(blackknight);
+    });
+    loader.load('models/chess/blackrook.json', function(blackrook) {
+      blackrook.position.set(-7,-7,1);
+      tablero.add(blackrook);
+    });
+    loader.load('models/chess/blackrook.json', function(blackrook) {
+      blackrook.position.set(-7,7,1);
+      tablero.add(blackrook);
+    });
+    loader.load('models/chess/blackpawn.json', function(blackpawn) {
+      blackpawn.position.set(-5,7,1);
+      tablero.add(blackpawn);
+    });
+    loader.load('models/chess/blackpawn.json', function(blackpawn) {
+      blackpawn.position.set(-5,5,1);
+      tablero.add(blackpawn);
+    });
+    loader.load('models/chess/blackpawn.json', function(blackpawn) {
+      blackpawn.position.set(-5,3,1);
+      tablero.add(blackpawn);
+    });
+    loader.load('models/chess/blackpawn.json', function(blackpawn) {
+      blackpawn.position.set(-5,1,1);
+      tablero.add(blackpawn);
+    });
+    loader.load('models/chess/blackpawn.json', function(blackpawn) {
+      blackpawn.position.set(-5,-1,1);
+      tablero.add(blackpawn);
+    });
+    loader.load('models/chess/blackpawn.json', function(blackpawn) {
+      blackpawn.position.set(-5,-3,1);
+      tablero.add(blackpawn);
+    });
+    loader.load('models/chess/blackpawn.json', function(blackpawn) {
+      blackpawn.position.set(-5,-5,1);
+      tablero.add(blackpawn);
+    });
+    loader.load('models/chess/blackpawn.json', function(blackpawn) {
+      blackpawn.position.set(-5,-7,1);
+      tablero.add(blackpawn);
+    });
   }, function(err)
   {
     console.log(err.message);
