@@ -11,10 +11,12 @@ function init()
 {
   var directional = new THREE.DirectionalLight(0xffffff, 1);
   var directional2 = new THREE.DirectionalLight(0xffffff, 1);
+  var spotlight = new THREE.SpotLight(0xffffff);
   var ambiental = new THREE.AmbientLight(0xFFFBBF);
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
+  renderer.shadowMap.enabled = true;
   document.getElementById('container').appendChild( renderer.domElement );
 
   scene = new THREE.Scene();
@@ -28,10 +30,13 @@ function init()
 
   directional.position.set(10,10,0);
   directional2.position.set(-10,10,0);
+  spotlight.position.set(100,1000,100);
+  spotlight.castShadow = true;
   
 
   scene.add(directional);
   scene.add(directional2);
+  scene.add(spotlight);
   //scene.add(ambiental);
 
   window.addEventListener('resize', updateAspectRatio );
@@ -72,15 +77,18 @@ function loadAjedrez()
   loader.load('models/chess/chessboard.json', function(tablero) {
     tablero.position.y = 0;
     tablero.scale.set(1,1,1);
+    tablero.receiveShadow = true;
 
     loader.load('models/chess/whiteking.json', function(whiteking) {
       //var whitekingadd = new THREE.Mesh( whiteking, whiteMaterial );
       whiteking.position.set(7,-1,1);
       tablero.add(whiteking);
+      whiteking.castShadow = true;
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
       whitequeen.position.set(7,1,1);
       tablero.add(whitequeen);
+      whitequeen.castShadow = true;
     });
     loader.load('models/chess/whitebishop.json', function(whitebishop) {
       whitebishop.position.set(7,3,1);
