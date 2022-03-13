@@ -35,7 +35,6 @@ function init()
 
 function loadAjedrez()
 {
-  var skybox;
   var entorno = [ "images/posx.jpg" , "images/negx.jpg",
                     "images/posy.jpg" , "images/negy.jpg",
                     "images/posz.jpg" , "images/negz.jpg"];
@@ -51,7 +50,7 @@ function loadAjedrez()
                         side: THREE.BackSide
     } );
 
-    var habitacion = new THREE.Mesh( new THREE.CubeGeometry(300,300,300), matSkybox );
+    var skybox = new THREE.Mesh( new THREE.CubeGeometry(300,300,300), matSkybox );
     skybox.name = 'skybox';
     scene.add(skybox);
 
