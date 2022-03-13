@@ -53,7 +53,7 @@ function loadAjedrez()
     loader.load('models/chess/whiteking.json', function(whitekingmodel) {
       whitekingmodel.position.set(7,-1,1);
       var whiteking = new THREE.Mesh(whitekingmodel, whiteMaterial);
-      tablero.add(whiteking);
+      tablero.add(whitekingmodel);
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
       whitequeen.position.set(7,1,1);
