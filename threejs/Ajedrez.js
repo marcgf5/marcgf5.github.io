@@ -41,8 +41,8 @@ function loadAjedrez()
   var whiteMap = textureLoader.load('images/whitemarble.jpg');
   var blackMap = textureLoader.load('images/blackmarble.jpeg');
 
-  /*var whiteMaterial = new THREE.MeshLambertMaterial({color: 'white', wireframe: false, map: whiteMap});
-  var blackMaterial = new THREE.MeshLambertMaterial({color: 'black', wireframe: false, map: blackMap});*/
+  var whiteMaterial = new THREE.MeshPhongMaterial({map: whiteMap});
+  var blackMaterial = new THREE.MeshLambertMaterial({color: 'black', wireframe: false, map: blackMap});
 
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chessboard.json', function(tablero) {
@@ -50,9 +50,9 @@ function loadAjedrez()
     tablero.scale.set(1,1,1);
 
     loader.load('models/chess/whiteking.json', function(whiteking) {
-      tablero.add(whiteking);
-      whiteking.material.setValues({map: blackMap});
+      var whitekingadd = new THREE.Mesh( whiteking, whiteMaterial );
       whiteking.position.set(7,-1,1);
+      tablero.add(whitekingadd);
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
       whitequeen.position.set(7,1,1);
