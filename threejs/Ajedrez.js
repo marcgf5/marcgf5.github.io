@@ -45,31 +45,31 @@ function loadAjedrez()
       tablero.add(whiteking);
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
-      whitequeen.position.set(7,0,1);
+      whitequeen.position.set(7,1,1);
       tablero.add(whitequeen);
     });
     loader.load('models/chess/whitebishop.json', function(whitebishop) {
-      whitebishop.position.set(7,1,1);
+      whitebishop.position.set(7,3,1);
       tablero.add(whitebishop);
     });
     loader.load('models/chess/whitebishop.json', function(whitebishop) {
-      whitebishop.position.set(7,-2,1);
+      whitebishop.position.set(7,-3,1);
       tablero.add(whitebishop);
     });
     loader.load('models/chess/whiteknight.json', function(whiteknight) {
-      whiteknight.position.set(7,-3,1);
+      whiteknight.position.set(7,-5,1);
       tablero.add(whiteknight);
     });
     loader.load('models/chess/whiteknight.json', function(whiteknight) {
-      whiteknight.position.set(7,2,1);
+      whiteknight.position.set(7,5,1);
       tablero.add(whiteknight);
     });
     loader.load('models/chess/whiterook.json', function(whiterook) {
-      whiterook.position.set(7,-4,1);
+      whiterook.position.set(7,-7,1);
       tablero.add(whiterook);
     });
     loader.load('models/chess/whiterook.json', function(whiterook) {
-      whiterook.position.set(7,3,1);
+      whiterook.position.set(7,7,1);
       tablero.add(whiterook);
     });
   }, function(err)
