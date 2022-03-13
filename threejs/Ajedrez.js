@@ -19,7 +19,7 @@ function init()
 
   var aspectRatio = window.innerWidth / window.innerHeight;
   camera = new THREE.PerspectiveCamera( 50, aspectRatio , 0.1, 100 );
-  camera.position.set( 1, 1.5, 2 );
+  camera.position.set( 1, 5, 2 );
 
   cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
   cameraControls.target.set( 0, 0, 0 );
@@ -44,7 +44,8 @@ function loadAjedrez()
     console.log(err.message);
   });
   loader.load('models/chess/whiteking.json', function(whiteking) {
-    whiteking.position.y = 0;
+    whiteking.position.y = 1;
+    whiteking.lookAt(0,90,0);
     whiteking.scale.set(1,1,1);
     scene.add(whiteking);
   });
