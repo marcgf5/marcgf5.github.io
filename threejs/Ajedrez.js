@@ -35,7 +35,7 @@ function init()
 function loadAjedrez()
 {
   var loader = new THREE.ObjectLoader();
-  loader.load('models/chess/chess.json', function(tablero) {
+  loader.load('models/chess/chessboard.json', function(tablero) {
     tablero.position.y = 0;
     tablero.scale.set(0.001,0.001,0.001);
     scene.add(tablero);
@@ -45,7 +45,7 @@ function loadAjedrez()
   });
   loader.load('models/chess/whiteking.json', function(whiteking) {
     whiteking.position.y = 0;
-    whiteking.scale.set(0.001,0.001,0.001);
+    whiteking.scale.set(1,1,1);
     scene.add(whiteking);
   });
 
