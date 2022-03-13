@@ -41,7 +41,7 @@ function loadAjedrez()
     scene.add(tablero);
 
     loader.load('models/chess/whiteking.json', function(whiteking) {
-      whiteking.position.set(4.025,2.82,0);
+      whiteking.position.set(5.025,2.82,1);
       whiteking.scale.set(1,1,1);
       tablero.add(whiteking);
     });
