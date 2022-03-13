@@ -10,6 +10,7 @@ render();
 function init()
 {
   var direccional = new THREE.DirectionalLight(0xFFFFFF);
+  var direccional2 = new THREE.DirectionalLight(0xFFFFFF);
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
@@ -25,7 +26,9 @@ function init()
   cameraControls.target.set( 0, 0, 0 );
 
   direccional.position.set(5,10,7.5);
+  direccional2.position.set(-5,10,7.5);
   scene.add(direccional);
+  scene.add(direccional2);
 
   window.addEventListener('resize', updateAspectRatio );
   
