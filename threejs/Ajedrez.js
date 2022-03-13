@@ -133,7 +133,7 @@ function loadAjedrez()
       whitepawn.position.set(5,-7,1);
       tablero.add(whitepawn);
     });
-    loader.load('models/chess/brownking.json', function(blackking) {
+    loader.load('models/chess/blackking.json', function(blackking) {
       blackking.position.set(-7,-1,1);
       tablero.add(blackking);
     });
