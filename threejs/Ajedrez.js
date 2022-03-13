@@ -26,9 +26,7 @@ function init()
   cameraControls.target.set( 0, 0, 0 );
 
   direccional.position.set(5,10,7.5);
-  direccional2.position.set(-5,10,7.5);
   scene.add(direccional);
-  scene.add(direccional2);
 
   window.addEventListener('resize', updateAspectRatio );
   
@@ -37,14 +35,24 @@ function init()
 
 function loadAjedrez()
 {
+
+  var textureLoader = new THREE.TextureLoader();
+
+  var whiteMap = textureLoader.load('images/whitemarble.jpg');
+  var blackMap = textureLoader.load('images/blackmarble.jpeg');
+
+  var whiteMaterial = new THREE.MeshPhongMaterial({map: whiteMap});
+  var blackMaterial = new THREE.MeshPhongMaterial({map: blackMap});
+
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chessboard.json', function(tablero) {
     tablero.position.y = 0;
     tablero.scale.set(1,1,1);
     scene.add(tablero);
 
-    loader.load('models/chess/whiteking.json', function(whiteking) {
-      whiteking.position.set(7,-1,1);
+    loader.load('models/chess/whiteking.json', function(whitekingmodel) {
+      whitekingmodel.position.set(7,-1,1);
+      var whiteking = new THREE.Mesh(whitekingmodel, whiteMaterial);
       tablero.add(whiteking);
     });
     loader.load('models/chess/whitequeen.json', function(whitequeen) {
