@@ -9,8 +9,7 @@ render();
 
 function init()
 {
-  var direccional = new THREE.DirectionalLight(0xFFFFFF);
-  var direccional2 = new THREE.DirectionalLight(0xFFFFFF);
+  var hemisphereLight = new THREE.HemisphereLight(0xffffbb, 0x080820,1);
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.setClearColor( new THREE.Color(0xFFFFFF) );
@@ -25,8 +24,7 @@ function init()
   cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
   cameraControls.target.set( 0, 0, 0 );
 
-  direccional.position.set(5,10,7.5);
-  scene.add(direccional);
+  scene.add(hemisphereLight);
 
   window.addEventListener('resize', updateAspectRatio );
   
