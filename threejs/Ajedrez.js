@@ -38,7 +38,7 @@ function loadAjedrez()
 
   var textureLoader = new THREE.TextureLoader();
 
-  var whiteMap = textureLoader.load('images/whitemarble.jpg');
+  var whiteMap = textureLoader.load('images/chess.png');
   var blackMap = textureLoader.load('images/blackmarble.jpeg');
 
   /*var whiteMaterial = new THREE.MeshLambertMaterial({color: 'white', wireframe: false, map: whiteMap});
