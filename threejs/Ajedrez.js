@@ -39,15 +39,16 @@ function loadAjedrez()
     tablero.position.y = 0;
     tablero.scale.set(1,1,1);
     scene.add(tablero);
+
+    loader.load('models/chess/whiteking.json', function(whiteking) {
+      whiteking.position.set(4.025,0,2.82);
+      whiteking.lookAt(0,90,0);
+      whiteking.scale.set(1,1,1);
+      tablero.add(whiteking);
+    });
   }, function(err)
   {
     console.log(err.message);
-  });
-  loader.load('models/chess/whiteking.json', function(whiteking) {
-    whiteking.position.set(4.025,1,4.025);
-    whiteking.lookAt(0,90,0);
-    whiteking.scale.set(1,1,1);
-    scene.add(whiteking);
   });
 
 
