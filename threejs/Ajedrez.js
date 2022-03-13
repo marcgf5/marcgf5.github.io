@@ -72,6 +72,38 @@ function loadAjedrez()
       whiterook.position.set(7,7,1);
       tablero.add(whiterook);
     });
+    loader.load('models/chess/whitepawn.json', function(whitepawn) {
+      whitepawn.position.set(5,7,1);
+      tablero.add(whitepawn);
+    });
+    loader.load('models/chess/whitepawn.json', function(whitepawn) {
+      whitepawn.position.set(5,5,1);
+      tablero.add(whitepawn);
+    });
+    loader.load('models/chess/whitepawn.json', function(whitepawn) {
+      whitepawn.position.set(5,3,1);
+      tablero.add(whitepawn);
+    });
+    loader.load('models/chess/whitepawn.json', function(whitepawn) {
+      whitepawn.position.set(5,1,1);
+      tablero.add(whitepawn);
+    });
+    loader.load('models/chess/whitepawn.json', function(whitepawn) {
+      whitepawn.position.set(5,-1,1);
+      tablero.add(whitepawn);
+    });
+    loader.load('models/chess/whitepawn.json', function(whitepawn) {
+      whitepawn.position.set(5,-3,1);
+      tablero.add(whitepawn);
+    });
+    loader.load('models/chess/whitepawn.json', function(whitepawn) {
+      whitepawn.position.set(5,-5,1);
+      tablero.add(whitepawn);
+    });
+    loader.load('models/chess/whitepawn.json', function(whitepawn) {
+      whitepawn.position.set(5,-7,1);
+      tablero.add(whitepawn);
+    });
   }, function(err)
   {
     console.log(err.message);
