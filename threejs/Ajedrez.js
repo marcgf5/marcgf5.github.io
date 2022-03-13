@@ -25,7 +25,7 @@ function init()
   cameraControls.target.set( 0, 0, 0 );
 
   directional.lookAt(0,0,0);
-  directional.position.set(-10,10,0);
+  directional.position.set(10,10,0);
 
   scene.add(directional);
 
