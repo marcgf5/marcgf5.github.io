@@ -189,7 +189,7 @@ function loadAjedrez()
     loader.load('models/chess/bishop.json', function(orangebishop) {
       orangebishop.material = blackMaterial;
       orangebishop.scale.set(45,45,45);
-      //orangebishop.rotation.set(1.5,0,0);
+      orangebishop.rotation.set(1.5,0,0);
       orangebishop.position.set(-7,-3,1);
       tablero.add(orangebishop);
     });
