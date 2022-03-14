@@ -198,37 +198,45 @@ function loadAjedrez()
       orangerook.position.set(-7,7,1);
       tablero.add(orangerook);
     });
-    loader.load('models/chess/orangepawn.json', function(orangepawn) {
-      orangepawn.position.set(-5,7,1);
-      tablero.add(orangepawn);
+    loader.load('models/chess/pawn.json', function(pawn) {
+      pawn.material = blackMaterial;
+      pawn.position.set(-5,7,1);
+      tablero.add(pawn);
     });
-    loader.load('models/chess/orangepawn.json', function(orangepawn) {
-      orangepawn.position.set(-5,5,1);
-      tablero.add(orangepawn);
+    loader.load('models/chess/pawn.json', function(pawn) {
+      pawn.material = blackMaterial;
+      pawn.position.set(-5,5,1);
+      tablero.add(pawn);
     });
-    loader.load('models/chess/orangepawn.json', function(orangepawn) {
-      orangepawn.position.set(-5,3,1);
-      tablero.add(orangepawn);
+    loader.load('models/chess/pawn.json', function(pawn) {
+      pawn.material = blackMaterial;
+      pawn.position.set(-5,3,1);
+      tablero.add(pawn);
     });
-    loader.load('models/chess/orangepawn.json', function(orangepawn) {
-      orangepawn.position.set(-5,1,1);
-      tablero.add(orangepawn);
+    loader.load('models/chess/pawn.json', function(pawn) {
+      pawn.material = blackMaterial;
+      pawn.position.set(-5,1,1);
+      tablero.add(pawn);
     });
-    loader.load('models/chess/orangepawn.json', function(orangepawn) {
-      orangepawn.position.set(-5,-1,1);
-      tablero.add(orangepawn);
+    loader.load('models/chess/pawn.json', function(pawn) {
+      pawn.material = blackMaterial;
+      pawn.position.set(-5,-1,1);
+      tablero.add(pawn);
     });
-    loader.load('models/chess/orangepawn.json', function(orangepawn) {
-      orangepawn.position.set(-5,-3,1);
-      tablero.add(orangepawn);
+    loader.load('models/chess/pawn.json', function(pawn) {
+      pawn.material = blackMaterial;
+      pawn.position.set(-5,-3,1);
+      tablero.add(pawn);
     });
-    loader.load('models/chess/orangepawn.json', function(orangepawn) {
-      orangepawn.position.set(-5,-5,1);
-      tablero.add(orangepawn);
+    loader.load('models/chess/pawn.json', function(pawn) {
+      pawn.material = blackMaterial;
+      pawn.position.set(-5,-5,1);
+      tablero.add(pawn);
     });
-    loader.load('models/chess/orangepawn.json', function(orangepawn) {
-      orangepawn.position.set(-5,-7,1);
-      tablero.add(orangepawn);
+    loader.load('models/chess/pawn.json', function(pawn) {
+      pawn.material = blackMaterial;
+      pawn.position.set(-5,-7,1);
+      tablero.add(pawn);
     });
     scene.add(tablero);
   }, function(err)
