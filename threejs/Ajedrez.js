@@ -36,7 +36,7 @@ function init()
   
 
   scene.add(directional);
-  //scene.add(directional2);
+  scene.add(directional2);
   //scene.add(spotlight);
   //scene.add(ambiental);
 
