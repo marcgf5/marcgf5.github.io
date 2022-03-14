@@ -76,9 +76,10 @@ function loadAjedrez()
 
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chessboard.json', function(tablero) {
-    tablero.position.y = 0;
-    tablero.scale.set(1,1,1);
-    tablero.traverse(function(node) {
+    tableroult.position.y = 0;
+    var tableroult = new THREE.Mesh (tablero, whiteMaterial);
+    tableroult.scale.set(1,1,1);
+    tableroult.traverse(function(node) {
       if (node.isMesh) {
         node.receiveShadow = true;
         node.castShadow = true;
@@ -228,7 +229,7 @@ function loadAjedrez()
       orangepawn.position.set(-5,-7,1);
       tablero.add(orangepawn);
     });
-    scene.add(tablero);
+    scene.add(tableroult);
   }, function(err)
   {
     console.log(err.message);
