@@ -72,7 +72,7 @@ function loadAjedrez()
   var blackMap = textureLoader.load('images/blackmarble.jpeg');
 
   var whiteMaterial = new THREE.MeshPhongMaterial({map: whiteMap});
-  var blackMaterial = new THREE.MeshLambertMaterial({color: 'black', wireframe: false, map: blackMap});
+  var blackMaterial = new THREE.MeshLambertMaterial({map: blackMap});
 
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chessboard.json', function(tablero) {
@@ -167,6 +167,7 @@ function loadAjedrez()
     });
     loader.load('models/chess/orangeking.json', function(orangeking) {
       orangeking.position.set(-7,-1,1);
+      orangeking.material = blackMaterial;
       tablero.add(orangeking);
     });
     loader.load('models/chess/orangequeen.json', function(orangequeen) {
