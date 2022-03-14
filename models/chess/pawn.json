@@ -65,26 +65,15 @@
 			"stencilZPass": 7680
 		}],
 	"object": {
-		"uuid": "4BF51CB9-A1F1-443A-849F-CA41E1FDA58B",
-		"type": "Object3D",
-		"name": "WhitePawn_1",
+		"uuid": "3F142466-7A61-4750-80FE-CC76E02EFA56",
+		"type": "Mesh",
+		"name": "Object_6",
 		"userData": {
-			"name": "WhitePawn_1"
+			"name": "Object_6"
 		},
 		"layers": 1,
-		"matrix": [0.9573954628287145,0,-0.28878006814008417,0,0,1,0,0,0.28878006814008417,0,0.9573954628287145,0,-0.08675067126750946,0.039884891360998154,0.12257149070501328,1],
-		"children": [
-			{
-				"uuid": "3F142466-7A61-4750-80FE-CC76E02EFA56",
-				"type": "Mesh",
-				"name": "Object_6",
-				"userData": {
-					"name": "Object_6"
-				},
-				"layers": 1,
-				"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
-				"geometry": "E9D2CEB0-832B-4FF2-95BC-E74834A93320",
-				"material": "B6AC637B-9ECE-4F62-949C-C433AC558787"
-			}]
+		"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+		"geometry": "E9D2CEB0-832B-4FF2-95BC-E74834A93320",
+		"material": "B6AC637B-9ECE-4F62-949C-C433AC558787"
 	}
 }
