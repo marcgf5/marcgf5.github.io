@@ -200,7 +200,7 @@ function loadAjedrez()
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
-      pawn.scale.set(30,30,30);
+      pawn.scale.set(45,45,45);
       pawn.rotation.set(1.5,0,0);
       //commentprueba
       pawn.position.set(-5,7,1);
