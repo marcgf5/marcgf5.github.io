@@ -107,7 +107,7 @@ function loadAjedrez()
       whitequeen.scale.set(0.75,0.75,0.75);
       whitequeen.material = whiteMaterial;
       whitequeen.name = 'whitequeen';
-      this.whitequeen = 'whitequeen';
+      this.whitequeen = whitequeen;
       shadowsReady(whitequeen);
       tablero.add(whitequeen);
     });
