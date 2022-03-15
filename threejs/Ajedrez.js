@@ -494,7 +494,7 @@ function movimientoPiezas(event){
 
 function updateAnimation(){
   moveWP1 = new TWEEN.Tween(whitepawn1.position).
-                               to( {x : whitepawn1.position.x + 2}, 500);
+                               to( {x : whitepawn1.position.x - 2}, 500);
   moveWP1.easing( TWEEN.Easing.Bounce.Out );
                                moveWP1.interpolation( TWEEN.Interpolation.Bezier );
 }
