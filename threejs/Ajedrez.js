@@ -51,6 +51,7 @@ function init()
   //scene.add(ambiental);
 
   window.addEventListener('resize', updateAspectRatio );
+  renderer.domElement.addEventListener('dblclick', movimientoPiezas);
   
 }
 
