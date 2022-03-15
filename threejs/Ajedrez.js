@@ -341,11 +341,13 @@ function loadAjedrez()
   {
     console.log(err.message);
   });
-  loader.load('models/chess/beachball2.json', function(ball) {
-    ball.position.set(0,0,0);
+  var texturaBola = new THREE.TextureLoader().load("images/beachball.png");
+    var geoBola = new THREE.SphereGeometry( 1, 30, 30 );
+    var ballMaterial = new THREE.MeshPhongMaterial( {map: texturaBola } );
+    ball = new THREE.Mesh( geoBola, ballMaterial);
+    ball.position.set(80,35,40);
     ball.scale.set(5,5,5);
     scene.add(ball);
-  });
   //scene.add(new THREE.AxesHelper(3) );
 }
 
