@@ -341,7 +341,7 @@ function loadAjedrez()
   {
     console.log(err.message);
   });
-  loader.load('models/chess/beachball.json', function(ball) {
+  loader.load('models/chess/beachball2.json', function(ball) {
     ball.position.set(100,-50,75);
     ball.scale.set(1,1,1);
     scene.add(ball);
