@@ -2,6 +2,7 @@
 var renderer, scene, camera, ajedrez;
 var cameraControls;
 var angulo = -0.01;
+var ball;
 
 init();
 loadAjedrez();
@@ -370,7 +371,12 @@ function update()
   // Cambios para actualizar la camara segun mvto del raton
   cameraControls.update();
 
-  // Movimiento propio del cubo
+  // Movimiento propio de la bola
+  if(ball.position.y <= -35){
+    ball.position.y = ball.position.y + parseFloat(0.5);
+  }else if(ball.position.y >= 0){
+    ball.position.y = ball.position.y - parseFloat(0.3);
+  }
 }
 
 function render()
