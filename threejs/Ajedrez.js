@@ -125,28 +125,28 @@ function loadAjedrez()
       whiteknight.position.set(7,-5,1);
       whiteknight.material = whiteMaterial;
       whiteknight.scale.set(45,45,45);
-      whiteknight.rotation.set(1.5,0,3);
+      whiteknight.rotation.set(1.5,0,0);
       tablero.add(whiteknight);
     });
     loader.load('models/chess/knight.json', function(whiteknight) {
       whiteknight.position.set(7,5,1);
       whiteknight.material = whiteMaterial;
       whiteknight.scale.set(45,45,45);
-      whiteknight.rotation.set(1.5,0,3);
+      whiteknight.rotation.set(1.5,0,0);
       tablero.add(whiteknight);
     });
     loader.load('models/chess/rook.json', function(whiterook) {
       whiterook.position.set(7,-7,1);
       whiterook.material = whiteMaterial;
       whiterook.scale.set(45,45,45);
-      whiteking.rotation.set(1.5,0,0);
+      whiterook.rotation.set(1.5,0,0);
       tablero.add(whiterook);
     });
     loader.load('models/chess/rook.json', function(whiterook) {
       whiterook.position.set(7,7,1);
       whiterook.material = whiteMaterial;
       whiterook.scale.set(45,45,45);
-      whiteking.rotation.set(1.5,0,0);
+      whiterook.rotation.set(1.5,0,0);
       tablero.add(whiterook);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
