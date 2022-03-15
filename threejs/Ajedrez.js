@@ -486,6 +486,7 @@ function movimientoPiezas(event){
       switch(interseccion[0].object.name){
         case 'whitepawn1':
           moveWP1.start();
+          console.log('Animacion');
           break;
       }
   }
@@ -496,7 +497,6 @@ function updateAnimation(){
                                to( {x : whitepawn1.position.x + 2}, 500);
   moveWP1.easing( TWEEN.Easing.Bounce.Out );
                                moveWP1.interpolation( TWEEN.Interpolation.Bezier );
-  console.log('Animacion');
 }
 
 function render()
