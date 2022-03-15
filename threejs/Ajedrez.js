@@ -36,7 +36,7 @@ function init()
   
 
   scene.add(directional);
-  //scene.add(directional2);
+  scene.add(directional2);
   //scene.add(spotlight);
   //scene.add(ambiental);
 
@@ -342,8 +342,8 @@ function loadAjedrez()
     console.log(err.message);
   });
   loader.load('models/chess/beachball2.json', function(ball) {
-    ball.position.set(100,-50,75);
-    ball.scale.set(1,1,1);
+    ball.position.set(0,0,0);
+    ball.scale.set(5,5,5);
     scene.add(ball);
   });
   //scene.add(new THREE.AxesHelper(3) );
