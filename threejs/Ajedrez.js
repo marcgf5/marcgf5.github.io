@@ -75,7 +75,7 @@ function loadAjedrez()
   var blackMaterial = new THREE.MeshLambertMaterial({map: blackMap});
 
   var loader = new THREE.ObjectLoader();
-  loader.load('models/chess/chessboard.json', function(tablero) {
+  loader.load('models/chess/tablero.json', function(tablero) {
     tablero.position.y = 0;
     tablero.scale.set(1,1,1);
     tablero.traverse(function(node) {
