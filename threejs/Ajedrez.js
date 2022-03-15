@@ -464,6 +464,7 @@ function update()
   }
 
   updateAnimation();
+  TWEEN.update();
 }
 
 function movimientoPiezas(event){
