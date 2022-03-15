@@ -36,7 +36,7 @@ function init()
   
 
   scene.add(directional);
-  scene.add(directional2);
+  //scene.add(directional2);
   //scene.add(spotlight);
   //scene.add(ambiental);
 
@@ -354,10 +354,8 @@ function loadAjedrez()
 
 function shadowsReady(object){
   object.traverse(function(node) {
-    if (node.isMesh) {
       node.receiveShadow = true;
       node.castShadow = true;
-    }
   });
 }
 
