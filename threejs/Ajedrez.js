@@ -77,7 +77,7 @@ function loadAjedrez()
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/tablero.json', function(tablero) {
     tablero.position.y = 0;
-    tablero.scale.set(1,1,1);
+    tablero.scale.set(45,45,45);
     tablero.traverse(function(node) {
       if (node.isMesh) {
         node.receiveShadow = true;
