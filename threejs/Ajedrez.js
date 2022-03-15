@@ -481,6 +481,7 @@ function movimientoPiezas(event){
   var interseccion = rayo.intersectObjects( scene.children, true );
   if( interseccion.length > 0){
       // Ver si es el soldado
+      console.log(interseccion);
       switch(interseccion[0].object.name){
         case 'whitepawn1':
           moveWP1.start();
