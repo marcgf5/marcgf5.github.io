@@ -343,7 +343,7 @@ function loadAjedrez()
   });
   loader.load('models/chess/beachball.json', function(ball) {
     ball.position.set(100,-50,75);
-    ball.scale.set(2,2,2);
+    ball.scale.set(1,1,1);
     scene.add(ball);
   });
   //scene.add(new THREE.AxesHelper(3) );
