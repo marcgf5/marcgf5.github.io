@@ -342,10 +342,11 @@ function loadAjedrez()
     console.log(err.message);
   });
 
-  var geoCubo = new THREE.BoxGeometry(10,10,10);
+  var cubo = new THREE.BoxGeometry(10,10,10);
     cubo.name = 'cubo';
     cubo.position.y = 10;
     cubo.receiveShadow = cubo.castShadow = true;
+    scene.add(cubo);
 
   scene.add(new THREE.AxesHelper(3) );
 }
