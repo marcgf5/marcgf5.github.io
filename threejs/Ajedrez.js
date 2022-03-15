@@ -489,6 +489,130 @@ function movimientoPiezas(event){
           moveWP1.start();
           console.log('Animacion');
           break;
+        case 'whitepawn2':
+          moveWP2.start();
+          console.log('Animacion');
+          break;
+        case 'whitepawn3':
+          moveWP3.start();
+          console.log('Animacion');
+          break;
+        case 'whitepawn4':
+          moveWP4.start();
+          console.log('Animacion');
+          break;
+        case 'whitepawn5':
+          moveWP5.start();
+          console.log('Animacion');
+          break;
+        case 'whitepawn6':
+          moveWP6.start();
+          console.log('Animacion');
+          break;
+        case 'whitepawn7':
+          moveWP7.start();
+          console.log('Animacion');
+          break;
+        case 'whitepawn8':
+          moveWP8.start();
+          console.log('Animacion');
+          break;
+        case 'whiterook1':
+          moveWR1.start();
+          console.log('Animacion');
+          break;
+        case 'whiterook2':
+          moveWR2.start();
+          console.log('Animacion');
+          break;
+        case 'whiteknight1':
+          moveWKn1.start();
+          console.log('Animacion');
+          break;
+        case 'whiteknight2':
+          moveWKn2.start();
+          console.log('Animacion');
+          break;
+        case 'whitebishop1':
+          moveWB1.start();
+          console.log('Animacion');
+          break;
+        case 'whitebishop2':
+          moveWB2.start();
+          console.log('Animacion');
+          break;
+        case 'whitequeen':
+          moveWQ.start();
+          console.log('Animacion');
+          break;
+        case 'whiteking':
+          moveWKi.start();
+          console.log('Animacion');
+          break;
+        case 'blackpawn1':
+          moveBP1.start();
+          console.log('Animacion');
+          break;
+        case 'blackpawn2':
+          moveBP2.start();
+          console.log('Animacion');
+          break;
+        case 'blackpawn3':
+          moveBP3.start();
+          console.log('Animacion');
+          break;
+        case 'blackpawn4':
+          moveBP4.start();
+          console.log('Animacion');
+          break;
+        case 'blackpawn5':
+          moveBP5.start();
+          console.log('Animacion');
+          break;
+        case 'blackpawn6':
+          moveBP6.start();
+          console.log('Animacion');
+          break;
+        case 'blackpawn7':
+          moveBP7.start();
+          console.log('Animacion');
+          break;
+        case 'blackpawn8':
+          moveBP8.start();
+          console.log('Animacion');
+          break;
+        case 'blackrook1':
+          moveBR1.start();
+          console.log('Animacion');
+          break;
+        case 'blackrook2':
+          moveBR2.start();
+          console.log('Animacion');
+          break;
+        case 'blackknight1':
+          moveBKn1.start();
+          console.log('Animacion');
+          break;
+        case 'blackknight2':
+          moveBKn2.start();
+          console.log('Animacion');
+          break;
+        case 'blackbishop1':
+          moveBB1.start();
+          console.log('Animacion');
+          break;
+        case 'blackbishop2':
+          moveBB2.start();
+          console.log('Animacion');
+          break;
+        case 'blackqueen':
+          moveBQ.start();
+          console.log('Animacion');
+          break;
+        case 'blackking':
+          moveBKi.start();
+          console.log('Animacion');
+          break;
       }
   }
 }
@@ -497,7 +621,131 @@ function updateAnimation(){
   moveWP1 = new TWEEN.Tween(whitepawn1.position).
                                to( {x : whitepawn1.position.x - 2}, 500);
   moveWP1.easing( TWEEN.Easing.Bounce.Out );
-                               moveWP1.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP1.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP2 = new TWEEN.Tween(whitepawn2.position).
+                               to( {x : whitepawn2.position.x - 2}, 500);
+  moveWP2.easing( TWEEN.Easing.Bounce.Out );
+  moveWP2.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP3 = new TWEEN.Tween(whitepawn3.position).
+                               to( {x : whitepawn3.position.x - 2}, 500);
+  moveWP3.easing( TWEEN.Easing.Bounce.Out );
+  moveWP3.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP4 = new TWEEN.Tween(whitepawn4.position).
+                               to( {x : whitepawn4.position.x - 2}, 500);
+  moveWP4.easing( TWEEN.Easing.Bounce.Out );
+  moveWP4.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP5 = new TWEEN.Tween(whitepawn5.position).
+                               to( {x : whitepawn5.position.x - 2}, 500);
+  moveWP5.easing( TWEEN.Easing.Bounce.Out );
+  moveWP5.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP6 = new TWEEN.Tween(whitepawn6.position).
+                               to( {x : whitepawn6.position.x - 2}, 500);
+  moveWP6.easing( TWEEN.Easing.Bounce.Out );
+  moveWP6.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP7 = new TWEEN.Tween(whitepawn7.position).
+                               to( {x : whitepawn7.position.x - 2}, 500);
+  moveWP7.easing( TWEEN.Easing.Bounce.Out );
+  moveWP7.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP8 = new TWEEN.Tween(whitepawn8.position).
+                               to( {x : whitepawn8.position.x - 2}, 500);
+  moveWP8.easing( TWEEN.Easing.Bounce.Out );
+  moveWP8.interpolation( TWEEN.Interpolation.Bezier );
+  moveWR1 = new TWEEN.Tween(whiterook1.position).
+                               to( {x : whiterook1.position.x - 2}, 500);
+  moveWR1.easing( TWEEN.Easing.Bounce.Out );
+  moveWR1.interpolation( TWEEN.Interpolation.Bezier );
+  moveWR2 = new TWEEN.Tween(whiterook2.position).
+                               to( {x : whiterook2.position.x - 2}, 500);
+  moveWR2.easing( TWEEN.Easing.Bounce.Out );
+  moveWR2.interpolation( TWEEN.Interpolation.Bezier );
+  moveWB1 = new TWEEN.Tween(whitebishop1.position).
+                               to( {x : whitebishop1.position.x - 2}, 500);
+  moveWB1.easing( TWEEN.Easing.Bounce.Out );
+  moveWB1.interpolation( TWEEN.Interpolation.Bezier );
+  moveWB2 = new TWEEN.Tween(whitebishop2.position).
+                               to( {x : whitebishop2.position.x - 2}, 500);
+  moveWB2.easing( TWEEN.Easing.Bounce.Out );
+  moveWB2.interpolation( TWEEN.Interpolation.Bezier );
+  moveWKn1 = new TWEEN.Tween(whiteknight1.position).
+                               to( {x : whiteknight1.position.x - 2}, 500);
+  moveWKn1.easing( TWEEN.Easing.Bounce.Out );
+  moveWKn1.interpolation( TWEEN.Interpolation.Bezier );
+  moveWKn2 = new TWEEN.Tween(whiteknight2.position).
+                               to( {x : whiteknight2.position.x - 2}, 500);
+  moveWKn2.easing( TWEEN.Easing.Bounce.Out );
+  moveWKn2.interpolation( TWEEN.Interpolation.Bezier );
+  moveWQ = new TWEEN.Tween(whitequeen.position).
+                               to( {x : whitequeen.position.x - 2}, 500);
+  moveWQ.easing( TWEEN.Easing.Bounce.Out );
+  moveWQ.interpolation( TWEEN.Interpolation.Bezier );
+  moveWKi = new TWEEN.Tween(whiteking.position).
+                               to( {x : whiteking.position.x - 2}, 500);
+  moveWKi.easing( TWEEN.Easing.Bounce.Out );
+  moveWKi.interpolation( TWEEN.Interpolation.Bezier );
+  moveBP1 = new TWEEN.Tween(blackpawn1.position).
+                               to( {x : blackpawn1.position.x + 2}, 500);
+  moveBP1.easing( TWEEN.Easing.Bounce.Out );
+  moveBP1.interpolation( TWEEN.Interpolation.Bezier );
+  moveBP2 = new TWEEN.Tween(blackpawn2.position).
+                               to( {x : blackpawn2.position.x + 2}, 500);
+  moveBP2.easing( TWEEN.Easing.Bounce.Out );
+  moveBP2.interpolation( TWEEN.Interpolation.Bezier );
+  moveBP3 = new TWEEN.Tween(blackpawn3.position).
+                               to( {x : blackpawn3.position.x + 2}, 500);
+  moveBP3.easing( TWEEN.Easing.Bounce.Out );
+  moveBP3.interpolation( TWEEN.Interpolation.Bezier );
+  moveBP4 = new TWEEN.Tween(blackpawn4.position).
+                               to( {x : blackpawn4.position.x + 2}, 500);
+  moveBP4.easing( TWEEN.Easing.Bounce.Out );
+  moveBP4.interpolation( TWEEN.Interpolation.Bezier );
+  moveBP5 = new TWEEN.Tween(blackpawn5.position).
+                               to( {x : blackpawn5.position.x + 2}, 500);
+  moveBP5.easing( TWEEN.Easing.Bounce.Out );
+  moveBP5.interpolation( TWEEN.Interpolation.Bezier );
+  moveBP6 = new TWEEN.Tween(blackpawn6.position).
+                               to( {x : blackpawn6.position.x + 2}, 500);
+  moveBP6.easing( TWEEN.Easing.Bounce.Out );
+  moveBP6.interpolation( TWEEN.Interpolation.Bezier );
+  moveBP7 = new TWEEN.Tween(blackpawn7.position).
+                               to( {x : blackpawn7.position.x + 2}, 500);
+  moveBP7.easing( TWEEN.Easing.Bounce.Out );
+  moveBP7.interpolation( TWEEN.Interpolation.Bezier );
+  moveBP8 = new TWEEN.Tween(blackpawn8.position).
+                               to( {x : blackpawn8.position.x + 2}, 500);
+  moveBP8.easing( TWEEN.Easing.Bounce.Out );
+  moveBP8.interpolation( TWEEN.Interpolation.Bezier );
+  moveBR1 = new TWEEN.Tween(blackrook1.position).
+                               to( {x : blackrook1.position.x + 2}, 500);
+  moveBR1.easing( TWEEN.Easing.Bounce.Out );
+  moveBR1.interpolation( TWEEN.Interpolation.Bezier );
+  moveBR2 = new TWEEN.Tween(blackrook2.position).
+                               to( {x : blackrook2.position.x + 2}, 500);
+  moveBR2.easing( TWEEN.Easing.Bounce.Out );
+  moveBR2.interpolation( TWEEN.Interpolation.Bezier );
+  moveBB1 = new TWEEN.Tween(blackbishop1.position).
+                               to( {x : blackbishop1.position.x + 2}, 500);
+  moveBB1.easing( TWEEN.Easing.Bounce.Out );
+  moveBB1.interpolation( TWEEN.Interpolation.Bezier );
+  moveBB2 = new TWEEN.Tween(blackbishop2.position).
+                               to( {x : blackbishop2.position.x + 2}, 500);
+  moveBB2.easing( TWEEN.Easing.Bounce.Out );
+  moveBB2.interpolation( TWEEN.Interpolation.Bezier );
+  moveBKn1 = new TWEEN.Tween(blackknight1.position).
+                               to( {x : blackknight1.position.x + 2}, 500);
+  moveBKn1.easing( TWEEN.Easing.Bounce.Out );
+  moveBKn1.interpolation( TWEEN.Interpolation.Bezier );
+  moveBKn2 = new TWEEN.Tween(blackknight2.position).
+                               to( {x : blackknight2.position.x + 2}, 500);
+  moveBKn2.easing( TWEEN.Easing.Bounce.Out );
+  moveBKn2.interpolation( TWEEN.Interpolation.Bezier );
+  moveBQ = new TWEEN.Tween(blackqueen.position).
+                               to( {x : blackqueen.position.x + 2}, 500);
+  moveBQ.easing( TWEEN.Easing.Bounce.Out );
+  moveBQ.interpolation( TWEEN.Interpolation.Bezier );
+  moveBKi = new TWEEN.Tween(blackking.position).
+                               to( {x : blackking.position.x + 2}, 500);
+  moveBKi.easing( TWEEN.Easing.Bounce.Out );
+  moveBKi.interpolation( TWEEN.Interpolation.Bezier );
 }
 
 function render()
