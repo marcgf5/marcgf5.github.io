@@ -491,10 +491,10 @@ function movimientoPiezas(event){
 }
 
 function updateAnimation(){
-  moveWP1 = new TWEEN.Tween(whitepawn1.position.x).
-                               to( whitepawn1.position.x + 2);
-  salto.easing( TWEEN.Easing.Bounce.Out );
-                               salto.interpolation( TWEEN.Interpolation.Bezier );
+  moveWP1 = new TWEEN.Tween(whitepawn1.position).
+                               to( {x: whitepawn1.position.x + 2}, 500);
+  moveWP1.easing( TWEEN.Easing.Bounce.Out );
+                               moveWP1.interpolation( TWEEN.Interpolation.Bezier );
 }
 
 function render()
