@@ -294,7 +294,7 @@ function loadAjedrez()
     loader.load('models/chess/knight.json', function(orangeknight) {
       orangeknight.material = blackMaterial;
       orangeknight.scale.set(45,45,45);
-      orangeknight.rotation.set(1.55,0,0);
+      orangeknight.rotation.set(1.55,3,0);
       orangeknight.position.set(-7,-5,1);
       orangeknight.name = 'blackknight1';
       this.blackknight1 = orangeknight;
@@ -304,7 +304,7 @@ function loadAjedrez()
     loader.load('models/chess/knight.json', function(orangeknight) {
       orangeknight.material = blackMaterial;
       orangeknight.scale.set(45,45,45);
-      orangeknight.rotation.set(1.55,0,0);
+      orangeknight.rotation.set(1.55,3,0);
       orangeknight.position.set(-7,5,1);
       orangeknight.name = 'blackknight2';
       this.blackknight2 = orangeknight;
