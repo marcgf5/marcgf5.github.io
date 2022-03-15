@@ -35,7 +35,7 @@ function init()
   spotlight.castShadow = true;
   
 
-  //scene.add(directional);
+  scene.add(directional);
   scene.add(directional2);
   //scene.add(spotlight);
   //scene.add(ambiental);
@@ -69,7 +69,7 @@ function loadAjedrez()
   var textureLoader = new THREE.TextureLoader();
 
   var whiteMap = textureLoader.load('images/whitemarble.jpg');
-  var blackMap = textureLoader.load('images/blackmarble.jpeg');
+  var blackMap = textureLoader.load('images/brownwood.jpg');
 
   var whiteMaterial = new THREE.MeshPhongMaterial({map: whiteMap});
   var blackMaterial = new THREE.MeshLambertMaterial({map: blackMap});
