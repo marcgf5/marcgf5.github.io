@@ -342,7 +342,7 @@ function loadAjedrez()
     console.log(err.message);
   });
   loader.load('models/chess/beachball.json', function(ball) {
-    ball.position.set(25,-10,15);
+    ball.position.set(75,-50,45);
     ball.scale.set(2,2,2);
     scene.add(ball);
   });
