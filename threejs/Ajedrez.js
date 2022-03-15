@@ -3,6 +3,7 @@ var renderer, scene, camera, ajedrez;
 var cameraControls;
 var angulo = -0.01;
 var ball;
+var subiendo = true;
 
 init();
 loadAjedrez();
@@ -373,10 +374,17 @@ function update()
 
   // Movimiento propio de la bola
   if(ball.position.y <= -35){
-    ball.position.y = ball.position.y + parseFloat(0.5);
+    subiendo = true;
   }else if(ball.position.y >= 0){
+    subiendo = false;
+  }
+
+  if(subiendo){
+    ball.position.y = ball.position.y + parseFloat(0.5);
+  }else{
     ball.position.y = ball.position.y - parseFloat(0.3);
   }
+
 }
 
 function render()
