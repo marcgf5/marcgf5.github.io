@@ -74,13 +74,6 @@ function loadAjedrez()
   var whiteMaterial = new THREE.MeshPhongMaterial({map: whiteMap});
   var blackMaterial = new THREE.MeshLambertMaterial({map: blackMap});
 
-  var texSol = new THREE.TextureLoader().load("images/brownwood.png");
-    var geoSol = new THREE.SphereGeometry( 1, 30, 30 );
-    sol = new THREE.Mesh( geoSol, texSol);
-    sol.position.set(0,10,0);
-    sol.scale.set(10,10,10);
-    scene.add(sol);
-
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chessboard.json', function(tablero) {
     tablero.position.y = 0;
@@ -349,7 +342,8 @@ function loadAjedrez()
     console.log(err.message);
   });
   loader.load('models/chess/beachball.json', function(ball) {
-    ball.position.set(50,0,0);
+    ball.position.set(25,-10,15);
+    ball.scale.set(5,5,5);
     scene.add(ball);
   });
   //scene.add(new THREE.AxesHelper(3) );
