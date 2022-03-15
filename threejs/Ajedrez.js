@@ -77,7 +77,7 @@ function loadAjedrez()
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chessboard.json', function(tablero) {
     tablero.position.y = 0;
-    //tablero.scale.set(45,45,45);
+    tablero.scale.set(1,1,1);
     shadowsReady(tablero);
 
     loader.load('models/chess/king.json', function(whiteking) {
