@@ -342,7 +342,8 @@ function loadAjedrez()
     console.log(err.message);
   });
 
-  var cubo = new THREE.BoxGeometry(10,10,10);
+  var geoCubo = new THREE.BoxGeometry(10,10,10);
+  var cubo = new THREE.Mesh(geoCubo);
     cubo.name = 'cubo';
     cubo.position.y = 10;
     cubo.receiveShadow = cubo.castShadow = true;
