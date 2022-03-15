@@ -23,7 +23,7 @@ function init()
   scene = new THREE.Scene();
 
   var aspectRatio = window.innerWidth / window.innerHeight;
-  camera = new THREE.PerspectiveCamera( 50, aspectRatio , 0.1, 200 );
+  camera = new THREE.PerspectiveCamera( 50, aspectRatio , 0.1, 300 );
   camera.position.set( 10, 25, 5 );
 
   cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
@@ -342,7 +342,7 @@ function loadAjedrez()
     console.log(err.message);
   });
   loader.load('models/chess/beachball.json', function(ball) {
-    ball.position.set(75,-50,45);
+    ball.position.set(100,-50,75);
     ball.scale.set(2,2,2);
     scene.add(ball);
   });
