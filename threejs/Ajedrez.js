@@ -341,7 +341,7 @@ function loadAjedrez()
     scene.add(tablero);
 
     loader.load('models/chess/umbrella.json', function(umbrella){
-      umbrella.position.set(-50,-30,-45);
+      umbrella.position.set(-100,-80,-145);
       scene.add(umbrella);
     });
   }, function(err)
