@@ -87,6 +87,7 @@ function loadAjedrez()
 
     loader.load('models/chess/king.json', function(whiteking) {
       whiteking.position.set(7,-1,1);
+      whiteking.scale.set(0.75,0.75,0.75);
       whiteking.rotation.set(1.5,0,0);
       whiteking.material = whiteMaterial;
       tablero.add(whiteking);
@@ -100,6 +101,7 @@ function loadAjedrez()
     loader.load('models/chess/queen.json', function(whitequeen) {
       whitequeen.position.set(7,1,1);
       whitequeen.rotation.set(1.5,0,0);
+      whitequeen.scale.set(0.75,0.75,0.75);
       whitequeen.material = whiteMaterial;
       tablero.add(whitequeen);
       whitequeen.traverse(function(node) {
@@ -112,12 +114,14 @@ function loadAjedrez()
     loader.load('models/chess/bishop.json', function(whitebishop) {
       whitebishop.position.set(7,3,1);
       whitebishop.rotation.set(1.5,0,0);
+      whitebishop.scale.set(0.75,0.75,0.75);
       whitebishop.material = whiteMaterial;
       tablero.add(whitebishop);
     });
     loader.load('models/chess/bishop.json', function(whitebishop) {
       whitebishop.position.set(7,-3,1);
       whitebishop.rotation.set(1.5,0,0);
+      whitebishop.scale.set(0.75,0.75,0.75);
       whitebishop.material = whiteMaterial;
       tablero.add(whitebishop);
     });
@@ -215,7 +219,7 @@ function loadAjedrez()
     loader.load('models/chess/queen.json', function(orangequeen) {
       orangequeen.material = blackMaterial;
       orangequeen.scale.set(0.75,0.75,0.75);
-      orangequeen.rotation.set(1.5,0,0);
+      orangequeen.rotation.set(1.4,0,0);
       orangequeen.position.set(-7,1,1);
       tablero.add(orangequeen);
     });
