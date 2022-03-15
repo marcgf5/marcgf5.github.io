@@ -88,7 +88,7 @@ function loadAjedrez()
     loader.load('models/chess/king.json', function(whiteking) {
       whiteking.position.set(7,-1,1);
       whiteking.scale.set(0.75,0.75,0.75);
-      whiteking.rotation.set(1.6,0,0);
+      whiteking.rotation.set(1.75,0,0);
       whiteking.material = whiteMaterial;
       tablero.add(whiteking);
       whiteking.traverse(function(node) {
@@ -100,7 +100,7 @@ function loadAjedrez()
     });
     loader.load('models/chess/queen.json', function(whitequeen) {
       whitequeen.position.set(7,1,1);
-      whitequeen.rotation.set(1.6,0,0);
+      whitequeen.rotation.set(1.75,0,0);
       whitequeen.scale.set(0.75,0.75,0.75);
       whitequeen.material = whiteMaterial;
       tablero.add(whitequeen);
@@ -113,14 +113,14 @@ function loadAjedrez()
     });
     loader.load('models/chess/bishop.json', function(whitebishop) {
       whitebishop.position.set(7,3,1);
-      whitebishop.rotation.set(1.6,0,0);
+      whitebishop.rotation.set(1.75,0,0);
       whitebishop.scale.set(0.75,0.75,0.75);
       whitebishop.material = whiteMaterial;
       tablero.add(whitebishop);
     });
     loader.load('models/chess/bishop.json', function(whitebishop) {
       whitebishop.position.set(7,-3,1);
-      whitebishop.rotation.set(1.6,0,0);
+      whitebishop.rotation.set(1.75,0,0);
       whitebishop.scale.set(0.75,0.75,0.75);
       whitebishop.material = whiteMaterial;
       tablero.add(whitebishop);
@@ -129,195 +129,195 @@ function loadAjedrez()
       whiteknight.position.set(7,-5,1);
       whiteknight.material = whiteMaterial;
       whiteknight.scale.set(45,45,45);
-      whiteknight.rotation.set(1.6,0,0);
+      whiteknight.rotation.set(1.75,0,0);
       tablero.add(whiteknight);
     });
     loader.load('models/chess/knight.json', function(whiteknight) {
       whiteknight.position.set(7,5,1);
       whiteknight.material = whiteMaterial;
       whiteknight.scale.set(45,45,45);
-      whiteknight.rotation.set(1.6,0,0);
+      whiteknight.rotation.set(1.75,0,0);
       tablero.add(whiteknight);
     });
     loader.load('models/chess/rook.json', function(whiterook) {
       whiterook.position.set(7,-7,1);
       whiterook.material = whiteMaterial;
       whiterook.scale.set(45,45,45);
-      whiterook.rotation.set(1.6,0,0);
+      whiterook.rotation.set(1.75,0,0);
       tablero.add(whiterook);
     });
     loader.load('models/chess/rook.json', function(whiterook) {
       whiterook.position.set(7,7,1);
       whiterook.material = whiteMaterial;
       whiterook.scale.set(45,45,45);
-      whiterook.rotation.set(1.6,0,0);
+      whiterook.rotation.set(1.75,0,0);
       tablero.add(whiterook);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
       whitepawn.position.set(5,7,1);
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
-      whitepawn.rotation.set(1.6,0,0);
+      whitepawn.rotation.set(1.75,0,0);
       tablero.add(whitepawn);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
       whitepawn.position.set(5,5,1);
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
-      whitepawn.rotation.set(1.6,0,0);
+      whitepawn.rotation.set(1.75,0,0);
       tablero.add(whitepawn);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
       whitepawn.position.set(5,3,1);
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
-      whitepawn.rotation.set(1.6,0,0);
+      whitepawn.rotation.set(1.75,0,0);
       tablero.add(whitepawn);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
       whitepawn.position.set(5,1,1);
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
-      whitepawn.rotation.set(1.6,0,0);
+      whitepawn.rotation.set(1.75,0,0);
       tablero.add(whitepawn);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
       whitepawn.position.set(5,-1,1);
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
-      whitepawn.rotation.set(1.6,0,0);
+      whitepawn.rotation.set(1.75,0,0);
       tablero.add(whitepawn);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
       whitepawn.position.set(5,-3,1);
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
-      whitepawn.rotation.set(1.6,0,0);
+      whitepawn.rotation.set(1.75,0,0);
       tablero.add(whitepawn);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
       whitepawn.position.set(5,-5,1);
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
-      whitepawn.rotation.set(1.6,0,0);
+      whitepawn.rotation.set(1.75,0,0);
       tablero.add(whitepawn);
     });
     loader.load('models/chess/pawn.json', function(whitepawn) {
       whitepawn.position.set(5,-7,1);
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
-      whitepawn.rotation.set(1.6,0,0);
+      whitepawn.rotation.set(1.75,0,0);
       tablero.add(whitepawn);
     });
     loader.load('models/chess/king.json', function(orangeking) {
       orangeking.material = blackMaterial;
       orangeking.scale.set(0.75,0.75,0.75);
-      orangeking.rotation.set(1.6,0,0);
+      orangeking.rotation.set(1.75,0,0);
       orangeking.position.set(-7,-1,1);
       tablero.add(orangeking);
     });
     loader.load('models/chess/queen.json', function(orangequeen) {
       orangequeen.material = blackMaterial;
       orangequeen.scale.set(0.75,0.75,0.75);
-      orangequeen.rotation.set(1.6,0,0);
+      orangequeen.rotation.set(1.75,0,0);
       orangequeen.position.set(-7,1,1);
       tablero.add(orangequeen);
     });
     loader.load('models/chess/bishop.json', function(orangebishop) {
       orangebishop.material = blackMaterial;
       orangebishop.scale.set(0.75,0.75,0.75);
-      orangebishop.rotation.set(1.6,0,0);
+      orangebishop.rotation.set(1.75,0,0);
       orangebishop.position.set(-7,3,1);
       tablero.add(orangebishop);
     });
     loader.load('models/chess/bishop.json', function(orangebishop) {
       orangebishop.material = blackMaterial;
       orangebishop.scale.set(0.75,0.75,0.75);
-      orangebishop.rotation.set(1.6,0,0);
+      orangebishop.rotation.set(1.75,0,0);
       orangebishop.position.set(-7,-3,1);
       tablero.add(orangebishop);
     });
     loader.load('models/chess/knight.json', function(orangeknight) {
       orangeknight.material = blackMaterial;
       orangeknight.scale.set(45,45,45);
-      orangeknight.rotation.set(1.6,0,0);
+      orangeknight.rotation.set(1.75,0,0);
       orangeknight.position.set(-7,-5,1);
       tablero.add(orangeknight);
     });
     loader.load('models/chess/knight.json', function(orangeknight) {
       orangeknight.material = blackMaterial;
       orangeknight.scale.set(45,45,45);
-      orangeknight.rotation.set(1.6,0,0);
+      orangeknight.rotation.set(1.75,0,0);
       orangeknight.position.set(-7,5,1);
       tablero.add(orangeknight);
     });
     loader.load('models/chess/rook.json', function(orangerook) {
       orangerook.material = blackMaterial;
       orangerook.scale.set(45,45,45);
-      orangerook.rotation.set(1.6,0,0);
+      orangerook.rotation.set(1.75,0,0);
       orangerook.position.set(-7,-7,1);
       tablero.add(orangerook);
     });
     loader.load('models/chess/rook.json', function(orangerook) {
       orangerook.material = blackMaterial;
       orangerook.scale.set(45,45,45);
-      orangerook.rotation.set(1.6,0,0);
+      orangerook.rotation.set(1.75,0,0);
       orangerook.position.set(-7,7,1);
       tablero.add(orangerook);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.6,0,0);
+      pawn.rotation.set(1.75,0,0);
       pawn.position.set(-5,7,1);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.6,0,0);
+      pawn.rotation.set(1.75,0,0);
       pawn.position.set(-5,5,1);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.6,0,0);
+      pawn.rotation.set(1.75,0,0);
       pawn.position.set(-5,3,1);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.6,0,0);
+      pawn.rotation.set(1.75,0,0);
       pawn.position.set(-5,1,1);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.6,0,0);
+      pawn.rotation.set(1.75,0,0);
       pawn.position.set(-5,-1,1);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.6,0,0);
+      pawn.rotation.set(1.75,0,0);
       pawn.position.set(-5,-3,1);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.6,0,0);
+      pawn.rotation.set(1.75,0,0);
       pawn.position.set(-5,-5,1);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.6,0,0);
+      pawn.rotation.set(1.75,0,0);
       pawn.position.set(-5,-7,1);
       tablero.add(pawn);
     });
