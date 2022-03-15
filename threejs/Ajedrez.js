@@ -339,6 +339,11 @@ function loadAjedrez()
       tablero.add(pawn);
     });
     scene.add(tablero);
+
+    loader.load('models/chess/umbrella.json', function(umbrella){
+      umbrella.position.set(-50,-30,-45);
+      scene.add(umbrella);
+    });
   }, function(err)
   {
     console.log(err.message);
