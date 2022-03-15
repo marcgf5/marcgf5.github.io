@@ -81,7 +81,7 @@ function loadAjedrez()
     shadowsReady(tablero);
 
     loader.load('models/chess/king.json', function(whiteking) {
-      //whiteking.position.set(7,-1,1);
+      whiteking.position.set(7,-1,1);
       //whiteking.scale.set(0.75,0.75,0.75);
       //whiteking.rotation.set(1.55,0,0);
       whiteking.material = whiteMaterial;
