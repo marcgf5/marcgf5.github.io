@@ -4,6 +4,14 @@ var cameraControls;
 var angulo = -0.01;
 var ball;
 var subiendo = true;
+var whitepawn1, whitepawn2, whitepawn3, whitepawn4, whitepawn5, whitepawn6, whitepawn7, whitepawn8;
+var whitebishop1, whitebishop2, whiteknight1, whiteknight2, whiterook1, whiterook2, whiteking, whitequeen;
+var blackpawn1, blackpawn2, blackpawn3, blackpawn4, blackpawn5, blackpawn6, blackpawn7, blackpawn8;
+var blackbishop1, blackbishop2, blackknight1, blackknight2, blackrook1, blackrook2, blackking, blackqueen;
+var moveWP1, moveWP2, moveWP3, moveWP4, moveWP5, moveWP6, moveWP7, moveWP8;
+var moveWB1, moveWB2, moveWKn1, moveWKn2, moveWR1, moveWR2, moveWKi, moveWQ;
+var moveBP1, moveBP2, moveBP3, moveBP4, moveBP5, moveBP6, moveBP7, moveBP8;
+var moveBB1, moveBB2, moveBKn1, moveBKn2, moveBR1, moveBR2, moveBKi, moveBQ;
 
 init();
 loadAjedrez();
@@ -87,6 +95,8 @@ function loadAjedrez()
       whiteking.scale.set(0.75,0.75,0.75);
       whiteking.rotation.set(1.55,0,0);
       whiteking.material = whiteMaterial;
+      whiteking.name = 'whiteking';
+      this.whiteking = whiteking;
       shadowsReady(whiteking);
       tablero.add(whiteking);
     });
@@ -95,6 +105,8 @@ function loadAjedrez()
       whitequeen.rotation.set(1.55,0,0);
       whitequeen.scale.set(0.75,0.75,0.75);
       whitequeen.material = whiteMaterial;
+      whitequeen.name = 'whitequeen';
+      this.whitequeen = 'whitequeen';
       shadowsReady(whitequeen);
       tablero.add(whitequeen);
     });
@@ -103,6 +115,8 @@ function loadAjedrez()
       whitebishop.rotation.set(1.55,0,0);
       whitebishop.scale.set(0.75,0.75,0.75);
       whitebishop.material = whiteMaterial;
+      whitebishop.name = 'whitebishop1';
+      this.whitebishop1 = whitebishop;
       shadowsReady(whitebishop);
       tablero.add(whitebishop);
     });
@@ -111,6 +125,8 @@ function loadAjedrez()
       whitebishop.rotation.set(1.55,0,0);
       whitebishop.scale.set(0.75,0.75,0.75);
       whitebishop.material = whiteMaterial;
+      whitebishop.name = 'whitebishop2';
+      this.whitebishop2 = whitebishop;
       shadowsReady(whitebishop);
       tablero.add(whitebishop);
     });
@@ -119,6 +135,8 @@ function loadAjedrez()
       whiteknight.material = whiteMaterial;
       whiteknight.scale.set(45,45,45);
       whiteknight.rotation.set(1.55,0,0);
+      whiteknight.name = 'whiteknight1';
+      this.whiteknight1 = whiteknight;
       shadowsReady(whiteknight);
       tablero.add(whiteknight);
     });
@@ -127,6 +145,8 @@ function loadAjedrez()
       whiteknight.material = whiteMaterial;
       whiteknight.scale.set(45,45,45);
       whiteknight.rotation.set(1.55,0,0);
+      whiteknight.name = 'whiteknight2';
+      this.whiteknight2 = whiteknight;
       shadowsReady(whiteknight);
       tablero.add(whiteknight);
     });
@@ -135,6 +155,8 @@ function loadAjedrez()
       whiterook.material = whiteMaterial;
       whiterook.scale.set(45,45,45);
       whiterook.rotation.set(1.55,0,0);
+      whiterook.name = 'whiterook1';
+      this.whiterook1 = whiterook;
       shadowsReady(whiterook);
       tablero.add(whiterook);
     });
@@ -143,6 +165,8 @@ function loadAjedrez()
       whiterook.material = whiteMaterial;
       whiterook.scale.set(45,45,45);
       whiterook.rotation.set(1.55,0,0);
+      whiterook.name = 'whiterook2';
+      this.whiterook2 = whiterook;
       shadowsReady(whiterook);
       tablero.add(whiterook);
     });
@@ -151,6 +175,8 @@ function loadAjedrez()
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
       whitepawn.rotation.set(1.55,0,0);
+      whitepawn.name = 'whitepawn1';
+      this.whitepawn1 = whitepawn;
       shadowsReady(whitepawn);
       tablero.add(whitepawn);
     });
@@ -159,6 +185,8 @@ function loadAjedrez()
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
       whitepawn.rotation.set(1.55,0,0);
+      whitepawn.name = 'whitepawn2';
+      this.whitepawn2 = whitepawn;
       shadowsReady(whitepawn);
       tablero.add(whitepawn);
     });
@@ -167,6 +195,8 @@ function loadAjedrez()
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
       whitepawn.rotation.set(1.55,0,0);
+      whitepawn.name = 'whitepawn3';
+      this.whitepawn3 = whitepawn;
       shadowsReady(whitepawn);
       tablero.add(whitepawn);
     });
@@ -175,6 +205,8 @@ function loadAjedrez()
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
       whitepawn.rotation.set(1.55,0,0);
+      whitepawn.name = 'whitepawn4';
+      this.whitepawn4 = whitepawn;
       shadowsReady(whitepawn);
       tablero.add(whitepawn);
     });
@@ -183,6 +215,8 @@ function loadAjedrez()
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
       whitepawn.rotation.set(1.55,0,0);
+      whitepawn.name = 'whitepawn5';
+      this.whitepawn5 = whitepawn;
       shadowsReady(whitepawn);
       tablero.add(whitepawn);
     });
@@ -191,6 +225,8 @@ function loadAjedrez()
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
       whitepawn.rotation.set(1.55,0,0);
+      whitepawn.name = 'whitepawn6';
+      this.whitepawn6 = whitepawn;
       shadowsReady(whitepawn);
       tablero.add(whitepawn);
     });
@@ -199,6 +235,8 @@ function loadAjedrez()
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
       whitepawn.rotation.set(1.55,0,0);
+      whitepawn.name = 'whitepawn7';
+      this.whitepawn7 = whitepawn;
       shadowsReady(whitepawn);
       tablero.add(whitepawn);
     });
@@ -207,6 +245,8 @@ function loadAjedrez()
       whitepawn.material = whiteMaterial;
       whitepawn.scale.set(45,45,45);
       whitepawn.rotation.set(1.55,0,0);
+      whitepawn.name = 'whitepawn8';
+      this.whitepawn8 = whitepawn;
       shadowsReady(whitepawn);
       tablero.add(whitepawn);
     });
@@ -215,6 +255,8 @@ function loadAjedrez()
       orangeking.scale.set(0.75,0.75,0.75);
       orangeking.rotation.set(1.55,0,0);
       orangeking.position.set(-7,-1,1);
+      orangeking.name = 'blackking';
+      this.blackking = orangeking;
       shadowsReady(orangeking);
       tablero.add(orangeking);
     });
@@ -223,6 +265,8 @@ function loadAjedrez()
       orangequeen.scale.set(0.75,0.75,0.75);
       orangequeen.rotation.set(1.55,0,0);
       orangequeen.position.set(-7,1,1);
+      orangequeen.name = 'blackqueen';
+      this.blackqueen = orangequeen;
       shadowsReady(orangequeen);
       tablero.add(orangequeen);
     });
@@ -231,6 +275,8 @@ function loadAjedrez()
       orangebishop.scale.set(0.75,0.75,0.75);
       orangebishop.rotation.set(1.55,0,0);
       orangebishop.position.set(-7,3,1);
+      orangebishop.name = 'blackbishop1';
+      this.blackbishop1 = orangebishop;
       shadowsReady(orangebishop);
       tablero.add(orangebishop);
     });
@@ -239,6 +285,8 @@ function loadAjedrez()
       orangebishop.scale.set(0.75,0.75,0.75);
       orangebishop.rotation.set(1.55,0,0);
       orangebishop.position.set(-7,-3,1);
+      orangebishop.name = 'blackbishop2';
+      this.blackbishop2 = orangebishop;
       shadowsReady(orangebishop);
       tablero.add(orangebishop);
     });
@@ -247,6 +295,8 @@ function loadAjedrez()
       orangeknight.scale.set(45,45,45);
       orangeknight.rotation.set(1.55,0,0);
       orangeknight.position.set(-7,-5,1);
+      orangeknight.name = 'blackknight1';
+      this.blackknight1 = orangeknight;
       shadowsReady(orangeknight);
       tablero.add(orangeknight);
     });
@@ -255,6 +305,8 @@ function loadAjedrez()
       orangeknight.scale.set(45,45,45);
       orangeknight.rotation.set(1.55,0,0);
       orangeknight.position.set(-7,5,1);
+      orangeknight.name = 'blackknight2';
+      this.blackknight2 = orangeknight;
       shadowsReady(orangeknight);
       tablero.add(orangeknight);
     });
@@ -263,6 +315,8 @@ function loadAjedrez()
       orangerook.scale.set(45,45,45);
       orangerook.rotation.set(1.55,0,0);
       orangerook.position.set(-7,-7,1);
+      orangerook.name = 'blackrook1';
+      this.blackrook1 = orangerook;
       shadowsReady(orangerook);
       tablero.add(orangerook);
     });
@@ -271,6 +325,8 @@ function loadAjedrez()
       orangerook.scale.set(45,45,45);
       orangerook.rotation.set(1.55,0,0);
       orangerook.position.set(-7,7,1);
+      orangerook.name = 'blackrook2';
+      this.blackrook2 = orangerook;
       shadowsReady(orangerook);
       tablero.add(orangerook);
     });
@@ -279,6 +335,8 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,7,1);
+      pawn.name = 'blackpawn1';
+      this.blackpawn1 = pawn;
       shadowsReady(pawn);
       tablero.add(pawn);
     });
@@ -287,6 +345,8 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,5,1);
+      pawn.name = 'blackpawn2';
+      this.blackpawn2 = pawn;
       shadowsReady(pawn);
       tablero.add(pawn);
     });
@@ -295,6 +355,8 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,3,1);
+      pawn.name = 'blackpawn3';
+      this.blackpawn3 = pawn;
       shadowsReady(pawn);
       tablero.add(pawn);
     });
@@ -303,6 +365,8 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,1,1);
+      pawn.name = 'blackpawn4';
+      this.blackpawn4 = pawn;
       shadowsReady(pawn);
       tablero.add(pawn);
     });
@@ -311,6 +375,8 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,-1,1);
+      pawn.name = 'blackpawn5';
+      this.blackpawn5 = pawn;
       shadowsReady(pawn);
       tablero.add(pawn);
     });
@@ -319,6 +385,8 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,-3,1);
+      pawn.name = 'blackpawn6';
+      this.blackpawn6 = pawn;
       shadowsReady(pawn);
       tablero.add(pawn);
     });
@@ -327,6 +395,8 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,-5,1);
+      pawn.name = 'blackpawn7';
+      this.blackpawn7 = pawn;
       shadowsReady(pawn);
       tablero.add(pawn);
     });
@@ -335,6 +405,8 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,-7,1);
+      pawn.name = 'blackpawn8';
+      this.blackpawn8 = pawn;
       shadowsReady(pawn);
       tablero.add(pawn);
     });
@@ -390,6 +462,38 @@ function update()
     ball.position.y = ball.position.y - parseFloat(0.3);
   }
 
+  updateAnimation();
+}
+
+function movimientoPiezas(event){
+  var x = event.clientX;
+  var y = event.clientY;
+
+  // Normalizar al espacio de 2x2 centrado
+  x = x * 2/window.innerWidth - 1;
+  y = -y * 2/window.innerHeight + 1;
+
+  // Construir el rayo que pasa por el punto de vista y el punto x,y
+  var rayo = new THREE.Raycaster();
+  rayo.setFromCamera( new THREE.Vector2(x,y), camera);
+
+  // Calcular interseccion con objetos de la escena
+  var interseccion = rayo.intersectObjects( scene.children, true );
+  if( interseccion.length > 0){
+      // Ver si es el soldado
+      switch(interseccion[0].object.name){
+        case 'whitepawn1':
+          moveWP1.start();
+          break;
+      }
+  }
+}
+
+function updateAnimation(){
+  moveWP1 = new TWEEN.Tween(whitepawn1.position.x).
+                               to( whitepawn1.position.x + 2);
+  salto.easing( TWEEN.Easing.Bounce.Out );
+                               salto.interpolation( TWEEN.Interpolation.Bezier );
 }
 
 function render()
