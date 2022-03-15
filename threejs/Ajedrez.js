@@ -341,7 +341,11 @@ function loadAjedrez()
   {
     console.log(err.message);
   });
-  scene.add(new THREE.AxesHelper(3) );
+  loader.load('models/chess/beachball.json', function(ball) {
+    ball.position.set(50,0,0);
+    scene.add(ball);
+  });
+  //scene.add(new THREE.AxesHelper(3) );
 }
 
 function shadowsReady(object){
