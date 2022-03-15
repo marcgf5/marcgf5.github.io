@@ -35,7 +35,7 @@ function init()
   spotlight.castShadow = true;
   
 
-  scene.add(directional);
+  //scene.add(directional);
   scene.add(directional2);
   //scene.add(spotlight);
   //scene.add(ambiental);
@@ -167,28 +167,28 @@ function loadAjedrez()
     });
     loader.load('models/chess/king.json', function(orangeking) {
       orangeking.material = blackMaterial;
-      //orangeking.scale.set(45,45,45);
+      orangeking.scale.set(0.75,0.75,0.75);
       orangeking.rotation.set(1.5,0,0);
       orangeking.position.set(-7,-1,1);
       tablero.add(orangeking);
     });
     loader.load('models/chess/queen.json', function(orangequeen) {
       orangequeen.material = blackMaterial;
-      //orangequeen.scale.set(45,45,45);
+      orangequeen.scale.set(0.75,0.75,0.75);
       orangequeen.rotation.set(1.5,0,0);
       orangequeen.position.set(-7,1,1);
       tablero.add(orangequeen);
     });
     loader.load('models/chess/bishop.json', function(orangebishop) {
       orangebishop.material = blackMaterial;
-      //orangebishop.scale.set(45,45,45);
+      orangebishop.scale.set(0.75,0.75,0.75);
       orangebishop.rotation.set(1.5,0,0);
       orangebishop.position.set(-7,3,1);
       tablero.add(orangebishop);
     });
     loader.load('models/chess/bishop.json', function(orangebishop) {
       orangebishop.material = blackMaterial;
-      //orangebishop.scale.set(45,45,45);
+      orangebishop.scale.set(0.75,0.75,0.75);
       orangebishop.rotation.set(1.5,0,0);
       orangebishop.position.set(-7,-3,1);
       tablero.add(orangebishop);
