@@ -24,7 +24,7 @@ function init()
 
   var aspectRatio = window.innerWidth / window.innerHeight;
   camera = new THREE.PerspectiveCamera( 50, aspectRatio , 0.1, 100 );
-  camera.position.set( 10, 15, 5 );
+  camera.position.set( 10, 25, 5 );
 
   cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
   cameraControls.target.set( 0, 0, 0 );
@@ -73,6 +73,13 @@ function loadAjedrez()
 
   var whiteMaterial = new THREE.MeshPhongMaterial({map: whiteMap});
   var blackMaterial = new THREE.MeshLambertMaterial({map: blackMap});
+
+  var texSol = new THREE.TextureLoader().load("images/brownwood.png");
+    var geoSol = new THREE.SphereGeometry( 1, 30, 30 );
+    sol = new THREE.Mesh( geoSol, texSol);
+    sol.position.set(0,10,0);
+    sol.scale.set(10,10,10);
+    scene.add(sol);
 
   var loader = new THREE.ObjectLoader();
   loader.load('models/chess/chessboard.json', function(tablero) {
