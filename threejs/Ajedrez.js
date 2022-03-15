@@ -23,7 +23,7 @@ function init()
   scene = new THREE.Scene();
 
   var aspectRatio = window.innerWidth / window.innerHeight;
-  camera = new THREE.PerspectiveCamera( 50, aspectRatio , 0.1, 100 );
+  camera = new THREE.PerspectiveCamera( 50, aspectRatio , 0.1, 200 );
   camera.position.set( 10, 25, 5 );
 
   cameraControls = new THREE.OrbitControls( camera, renderer.domElement );
