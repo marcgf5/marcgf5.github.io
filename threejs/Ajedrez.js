@@ -277,7 +277,7 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,7,1);
-      shadowsReady(orangepawn);
+      shadowsReady(pawn);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
@@ -285,7 +285,7 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,5,1);
-      shadowsReady(orangepawn);
+      shadowsReady(pawn);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
@@ -293,7 +293,7 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,3,1);
-      shadowsReady(orangepawn);
+      shadowsReady(pawn);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
@@ -301,7 +301,7 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,1,1);
-      shadowsReady(orangepawn);
+      shadowsReady(pawn);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
@@ -309,7 +309,7 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,-1,1);
-      shadowsReady(orangepawn);
+      shadowsReady(pawn);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
@@ -317,7 +317,7 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,-3,1);
-      shadowsReady(orangepawn);
+      shadowsReady(pawn);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
@@ -325,15 +325,15 @@ function loadAjedrez()
       pawn.scale.set(45,45,45);
       pawn.rotation.set(1.55,0,0);
       pawn.position.set(-5,-5,1);
-      shadowsReady(orangepawn);
+      shadowsReady(pawn);
       tablero.add(pawn);
     });
     loader.load('models/chess/pawn.json', function(pawn) {
       pawn.material = blackMaterial;
       //pawn.scale.set(45,45,45);
-      pawn.rotation.set(1.55,0,0);
+      //pawn.rotation.set(1.55,0,0);
       //pawn.position.set(-5,-7,1);
-      shadowsReady(orangepawn);
+      shadowsReady(pawn);
       tablero.add(pawn);
     });
     scene.add(tablero);
