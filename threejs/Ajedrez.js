@@ -345,7 +345,7 @@ function loadAjedrez()
     var geoBola = new THREE.SphereGeometry( 1, 30, 30 );
     var ballMaterial = new THREE.MeshPhongMaterial( {map: texturaBola } );
     ball = new THREE.Mesh( geoBola, ballMaterial);
-    ball.position.set(80,35,40);
+    ball.position.set(80,-35,40);
     ball.scale.set(5,5,5);
     scene.add(ball);
   //scene.add(new THREE.AxesHelper(3) );
