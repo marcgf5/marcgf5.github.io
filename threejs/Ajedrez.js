@@ -1,3 +1,10 @@
+/**ASSETS USADOS
+ * Skybox: http://humus.name/index.php?page=Textures&ID=124
+ * Tablero ajedrez: https://sketchfab.com/3d-models/chess-set-11aef53278434ca7b1c373b470cb5ee0
+ * Piezas ajedrez: https://sketchfab.com/3d-models/wooden-chess-set-90151fb0fb294e56b45e52b001a884db
+ * Sombrilla playa: https://sketchfab.com/3d-models/beach-umbrella-1014ad7c8a4c4aa8ba5e88fc6151aa4f
+ */
+
 
 var renderer, scene, camera, ajedrez;
 var cameraControls;
